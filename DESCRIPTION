@@ -1,8 +1,8 @@
 Package: getBolsaFamilia
-Title: What the Package Does (one line, title case)
+Title: Programa Bolsa Familia API Wrapper
 Version: 0.0.0.1
 Authors@R: person("João Pedro", "Santos", email = "joaopsantos@pm.me", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: Collects data from the Brazilian Government Social Program 'Bolsa Familia' using it's Services API.
 Depends: R (>= 3.4.4)
 License: MIT License
 Encoding: UTF-8
