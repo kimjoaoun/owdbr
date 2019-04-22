@@ -7,3 +7,7 @@ Depends: R (>= 3.4.4)
 License: MIT License
 Encoding: UTF-8
 LazyData: true
+Imports:
+    dplyr,
+    httr,
+    jsonlite
