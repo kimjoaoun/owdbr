@@ -30,7 +30,8 @@ getpbf_uflist <- function() {
       'Santa Catarina',
       'São Paulo',
       'Sergipe',
-      'Tocantins'
+      'Tocantins',
+      'Distrito Federal'
     )
   UF<-
     c(
@@ -59,7 +60,8 @@ getpbf_uflist <- function() {
       'SC',
       'SP',
       'SE',
-      'TO'
+      'TO',
+      'DF'
     )
   num <- c(
     12,
@@ -87,11 +89,9 @@ getpbf_uflist <- function() {
     42,
     35,
     28,
-    17
+    17,
+    53
   )
   df <- data.frame(num, UF, EST) %>% dplyr::tibble()
   return(df)
 }
-
-
-df <-getpbf_uf()
