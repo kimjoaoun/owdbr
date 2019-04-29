@@ -1,16 +1,16 @@
 owdbr_fies <-function(path){
   #' Collects data related to the Brazilian Federal Government's Educational Program FIES (Financiamento Estudantil).
-  ckanr_setup(url = "http://www.fnde.gov.br/dadosabertos")
+  ckanr::ckanr_setup(url = "http://www.fnde.gov.br/dadosabertos")
   print('This function might take some time to run since government data related to FIES might come in enourmous archives')
-  resfies <-resource_search('name:Financiamentos Concedidos')
-  resfies2 <- resfies$results
+  resfies <- ckkanr::resource_search('name:Financiamentos Concedidos')
+  resfies2 <- ckanr::resfies$results
 
   table= c()
 
   for(i in resfies2){
     lista <- resfies2[[i]][["url"]]
 
-    dataset <- fetch(lista, store= 'session', as= "table")
+    dataset <- ckanr::fetch(lista, store= 'session', as= "table")
 
     fin.data <- rbind(table, dataset)
   }
