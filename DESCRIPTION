@@ -1,6 +1,6 @@
 Package: owdbr
 Title: Open Welfare Data Brazil
-Version: 0.0.0.2
+Version: 1.0.0.2
 Authors@R: person("João Pedro", "Santos", email = "joaopsantos@pm.me", role = c("aut", "cre"))
 Description: Collects data from Several Brazilian Government's Social Programs
 Depends: R (>= 3.4.4)
@@ -11,5 +11,6 @@ Imports:
     dplyr,
     httr,
     jsonlite,
-    ckanr
+    ckanr,
+    data.table
 RoxygenNote: 6.1.1

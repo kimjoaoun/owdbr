@@ -9,7 +9,7 @@
 #'
 #' @example getpbf_mun('3304557', AAAA='2010', MM='05')
 
-getpbf_mun <- function(IBGECODE, AAAA, MM, PAGE) {
+owdbr_getpbf_mun <- function(IBGECODE, AAAA, MM, PAGE) {
 
   if (AAAA < 2003) {
     stop("Invalid Input: Program Bolsa Familia was created in 2003, so AAAA cannot be < 2003")

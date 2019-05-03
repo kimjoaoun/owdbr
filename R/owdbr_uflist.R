@@ -1,4 +1,4 @@
-getpbf_uflist <- function() {
+owdbr_uflist <- function() {
 
   #'  All the State's UF Codes.
   #' Returns a tibble which contains the IBGE identification code of each one of all 23 UFs (Units of the Federation) in Brazil.
@@ -7,7 +7,7 @@ getpbf_uflist <- function() {
   #'
   #' @return Returns a tibble with the states in the 'EST' column and its respective UF code in the 'UF' column.
   #'
-  #' @example getpbf_uflist()
+  #' @example owdbr_getpbf_uflist()
   #'
   #'@references Source: \href{https://cidades.ibge.gov.br}{IBGE (Brazilian Institute of Geography and Statistics)}
   EST <-
