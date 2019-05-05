@@ -1,41 +1,52 @@
-owdbr_uflist <- function() {
+#'All the State's UF Codes.
+#'
+#'Returns a tibble which contains the IBGE identification code of each one of all 23 UFs (Units of the Federation) in Brazil.
+#'
+#'
+#'
+#'@return a tibble with 3 columns.
+#' \describe{
+#'    \item{EST}{The full name of the state}
+#'    \item{UF}{The abbreviation of the state's name}
+#'    \item{num}{The identification number of the state.}
+#' }
+#'
+#'@examples uflist()
+#'
+#'@author Joao Pedro Oliveira dos Santos, International Relations Institute, Pontifical Catholic University of Rio de Janeiro
+#'
+#'@export
+#'
+#'@references Source: \href{https://cidades.ibge.gov.br}{IBGE (Brazilian Institute of Geography and Statistics)}
 
-  #'  All the State's UF Codes.
-  #' Returns a tibble which contains the IBGE identification code of each one of all 23 UFs (Units of the Federation) in Brazil.
-  #' Note: In alphabetical order.
-  #'  @param none
-  #'
-  #' @return Returns a tibble with the states in the 'EST' column and its respective UF code in the 'UF' column.
-  #'
-  #' @example owdbr_getpbf_uflist()
-  #'
-  #'@references Source: \href{https://cidades.ibge.gov.br}{IBGE (Brazilian Institute of Geography and Statistics)}
-  EST <-
+uflist <- function() {
+
+    EST <-
     c(
       "Acre",
       "Alagoas",
-      "Amapá",
+      "Amapa",
       "Amazonas",
       "Bahia",
-      "Ceará",
+      "Ceara",
       "Espirito Santo",
-      "Goiás",
-      "Maranhão",
+      "Goias",
+      "Maranhao",
       "Mato Grosso",
       "Mato Grosso do Sul",
       "Minas Gerais",
-      "Pará",
-      "Paraíba",
-      "Paraná",
+      "Para",
+      "Paraiba",
+      "Parana",
       "Pernambuco",
-      "Piauí",
+      "Piaui",
       "Rio de Janeiro",
       "Rio Grande do Norte",
       "Rio Grande do Sul",
-      "Rondônia",
+      "Rondonia",
       "Roraima",
       "Santa Catarina",
-      "São Paulo",
+      "Sao Paulo",
       "Sergipe",
       "Tocantins",
       "Distrito Federal"
@@ -99,6 +110,6 @@ owdbr_uflist <- function() {
     17,
     53
   )
-  df <- data.frame(num, UF, EST) %>% dplyr::tibble()
+  df <- tibble::as_tibble(data.frame(num, UF, EST))
   return(df)
 }
