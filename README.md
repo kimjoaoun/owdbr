@@ -4,7 +4,7 @@ Tools for collecting municipal-level data from several Brazilian governmental so
 
 Collects data from Public APIs that contains information related to the following programs:
 * Bolsa Familia Program  **OK**
-* PETI (Slave Labour Erradication Program)  **OK**
+* PETI (Child Slave Labour Erradication Program)  **OK**
 * Seguro Defeso  *Soon*
 * FIES (Financiamento Estudantil)  *Soon*
 * PROUNI  *Soon*
