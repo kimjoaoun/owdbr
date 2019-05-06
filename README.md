@@ -32,6 +32,7 @@ In the above example we are going to collect *Bolsa Familia Program* data from a
 
 ``
 states <- uflist()
+
 View(states)
 ``
 
