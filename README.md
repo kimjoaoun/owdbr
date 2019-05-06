@@ -16,7 +16,7 @@ install.packages('devtools')
 devtools::install_github('kimjoaoun/owdbr')
 ```
 
-## Introduction:
+## Introduction
 The package has some simple functions that needs to be understood by the user. Only with that knowledge of these, one can make a good use of it. All these functions were written in a way to support multiple requests at once, in order to facilitate the download of data from multiple municipalities.
 
 #### **``uflist()`` function** 
