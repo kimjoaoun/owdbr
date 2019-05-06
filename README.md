@@ -51,6 +51,6 @@ data.pbf <- getpbf_mun(munis$codigo_municipio)
 
 And that's it, using the following snippet of code, it'll be shown information related to the *Programa Bolsa Familia* into Rondônia's municipalities.
 
-``View(data.pbf)
+``View(data.pbf)``
 
 
