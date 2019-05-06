@@ -64,3 +64,4 @@ And that's it, using the following snippet of code, it'll be shown information r
 ``View(data.pbf)``
 
 
+Please note that the 'owdbr' project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.
