@@ -65,7 +65,7 @@ And that's it, using the following snippet of code, it'll be shown information r
 
 -----------
 
-Huge thanks to: Pedro Cavalcante, and Eduarda Oliveira for helping me out.
+Huge thanks to: Pedro Cavalcante and Eduarda Oliveira for helping me out.
 
 -----------
 
