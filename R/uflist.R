@@ -20,8 +20,8 @@
 #'@references Source: \href{https://cidades.ibge.gov.br}{IBGE (Brazilian Institute of Geography and Statistics)}
 
 uflist <- function() {
-
-    EST <-
+  
+  EST <-
     c(
       "Acre",
       "Alagoas",
@@ -110,6 +110,33 @@ uflist <- function() {
     17,
     53
   )
-  df <- tibble::as_tibble(data.frame(num, UF, EST))
+  Regiao <- c("Norte",
+              "Nordeste",
+              "Nordeste",
+              "Norte",
+              "Nordeste",
+              "Nordeste",
+              "Sudeste",
+              "Centro-Oeste",
+              "Nordeste",
+              "Centro-Oeste",
+              "Centro-Oeste",
+              "Sudeste",
+              "Norte",
+              "Nordeste",
+              "Sul",
+              "Nordeste",
+              "Nordeste",
+              "Sudeste",
+              "Nordeste",
+              "Sul",
+              "Norte",
+              "Norte",
+              "Sul",
+              "Sudeste",
+              "Nordeste",
+              "Norte",
+              "Centro-Oeste")
+  df <- tibble::as_tibble(data.frame(num, UF, EST, Regiao))
   return(df)
 }
