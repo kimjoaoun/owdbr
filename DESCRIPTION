@@ -1,16 +1,18 @@
 Package: owdbr
 Title: Open Welfare Data Brazil
-Version: 1.0.0.2
-Authors@R: person("João Pedro", "Santos", email = "joaopsantos@pm.me", role = c("aut", "cre"))
-Description: Collects data from Several Brazilian Government's Social Programs
+Version: 1.0.0.30
+Authors@R: person("Joao Pedro", "Oliveira dos Santos", email = "joaopsantos@pm.me", role = c("aut", "cre"))
+Description: Collects data from several brazilian government's social welfare programs like Bolsa Familia, Seguro Defeso, PROUNI (Program University for Everyone), PETI (Child Slave Labour Erradication Program) and FIES (Higher Education Financing Fund).
 Depends: R (>= 3.4.4)
-License: MIT License
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports:
+    tibble,
     dplyr,
     httr,
     jsonlite,
     ckanr,
-    data.table
+    data.table,
+    rlang
 RoxygenNote: 6.1.1
