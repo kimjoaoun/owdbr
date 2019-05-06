@@ -1,13 +1,20 @@
 # Open Welfare Data Brazil
-##### R Package
-Collects municipal-level data from Several Brazilian Government's Social Programs.
+
+Tools for collecting municipal-level data from several Brazilian governmental social programs.
 
 Collects data from Public APIs that contains information related to the following programs:
-- Bolsa Familia Program  **OK**
-- PETI (Slave Labour Erradication Program)  **OK**
-- Seguro Defeso  *Soon*
-- FIES (Financiamento Estudantil)  *Soon*
-- PROUNI  *Soon*
+* Bolsa Familia Program  **OK**
+* PETI (Slave Labour Erradication Program)  **OK**
+* Seguro Defeso  *Soon*
+* FIES (Financiamento Estudantil)  *Soon*
+* PROUNI  *Soon*
+
+## Installation
+
+```r
+install.packages('devtools')
+devtools::install_github('kimjoaoun/owdbr')
+```
 
 ## Introduction:
 The package has some simple functions that needs to be understood by the user. Only with that knowledge of these, one can make a good use of it. All these functions were written in a way to support multiple requests at once, in order to facilitate the download of data from multiple municipalities.
