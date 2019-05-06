@@ -1,5 +1,5 @@
 # Open Welfare Data Brazil
-
+##### R Package
 Collects municipal-level data from Several Brazilian Government's Social Programs.
 
 Collects data from Public APIs that contains information related to the following programs:
