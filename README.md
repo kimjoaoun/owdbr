@@ -30,6 +30,8 @@ Finally, to request the data, one should run the ``get(pbf/peti)_mun()`` functio
 ##### Example
 In the above example we are going to collect *Bolsa Familia Program* data from all municipalities in the state of Rondônia.
 
+``library(dplyr)``
+
 ``states <- uflist()``
 
 ``View(states)``
@@ -47,4 +49,8 @@ Then, after a few seconds, the tibble with the list of municipalities in the sta
 data.pbf <- getpbf_mun(munis$codigo_municipio)
 ``
 
-And that's it.
+And that's it, using the following snippet of code, it'll be shown information related to the *Programa Bolsa Familia* into Rondônia's municipalities.
+
+``View(data.pbf)
+
+
