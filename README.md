@@ -1,5 +1,7 @@
 # Open Welfare Data Brazil
 
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+
 Tools for collecting municipal-level data from several Brazilian governmental social programs.
 
 Collects data from Public APIs that contains information related to the following programs:
