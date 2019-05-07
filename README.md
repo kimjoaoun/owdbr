@@ -56,12 +56,21 @@ munis <- munlist(11)
 Then, after a few seconds, the tibble with the list of municipalities in the state of Rondônia is return, and then finally we can get the desired data using the code:
 
 ``
-data.pbf <- getpbf_mun(munis$codigo_municipio_completo)
+data.pbf <- getpbf_mun(munis$codigo_municipio_completo, AAAA=2015, MM=10, PAGE=1)
 ``
 
 And that's it, using the following snippet of code, it'll be shown information related to the *Programa Bolsa Familia* into Rondônia's municipalities.
 
 ``View(data.pbf)``
 
+-----------
+
+Huge thanks to: Pedro Cavalcante and Eduarda Oliveira for helping me out.
+
+-----------
 
 Please note that the 'owdbr' project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.
+
+-----------
+
+Citation (in Brazilian ABNT formatting rules): ```SANTOS, João Pedro; Open Welfare Data Brasil: Tools for collecting municipal-level data from several Brazilian governmental social programs. Versão 1.0.0.30. Rio de Janeiro, 06 Mai. 2019. Disponível em: https://github.com/kimjoaoun/owdbr/. Acesso em: *???*.```
