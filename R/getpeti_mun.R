@@ -10,7 +10,7 @@
 #'@param PAGE Request's page. Default= 1.
 #'
 #'
-#'@return a tibble with the requested data divided in 11 columns, if there are more than one IBGECODE, returns all of them in the same tibble.
+#'@return a tibble with the requested data, if there are more than one IBGECODE, returns all of them in the same tibble.
 #'\describe{
 #'   \item{dataReferencia}{Reference date}
 #'   \item{valor}{Amount of money invested in the municipality.}
@@ -23,9 +23,9 @@
 #'   \item{tipo.id}{Type}
 #'   \item{tipo.descricao}{Abbreviation of the program's name.}
 #'   \item{tipo.descricaoDetalhada}{Full name of the program.}
-#'   }
-#'
+#'}
 #'@examples getpeti_mun('3304557', AAAA='2015', MM='05', PAGE=1)
+#'
 #'
 #'@author Joao Pedro Oliveira dos Santos, International Relations Institute, Pontifical Catholic University of Rio de Janeiro
 #'
@@ -64,7 +64,7 @@ getpeti_mun <- function(IBGECODE, AAAA, MM, PAGE=1){
     newRow <- data.frame(jsonlite::fromJSON(resp, flatten = TRUE))
 
     table <- rbind(table, newRow)
-    table <- tibble::as_tibble(table)
+    table <- dplyr::as_tibble(table)
   }
 
   return(table)

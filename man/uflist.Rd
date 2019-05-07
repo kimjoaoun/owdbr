@@ -4,21 +4,26 @@
 \alias{uflist}
 \title{All the State's UF Codes.}
 \usage{
-uflist()
+uflist(reg = NA)
+}
+\arguments{
+\item{reg}{filter the UFs (Units of the Federation or States) by geographical region. If NA, all state are shown. According to the Brazilian Institute of Geography and Statistics, the country is divided in 5 regions: "Norte", "Nordeste", "Centro-Oeste", "Sul" and "Sudeste".}
 }
 \value{
 a tibble with 3 columns.
 \describe{
-   \item{EST}{The full name of the state}
-   \item{UF}{The abbreviation of the state's name}
+   \item{EST}{The full name of the state.}
+   \item{UF}{The abbreviation of the state's name.}
    \item{num}{The identification number of the state.}
+   \item{regiao}{Region of the country in which the State is located.}
 }
 }
 \description{
 Returns a tibble which contains the IBGE identification code of each one of all 23 UFs (Units of the Federation) in Brazil.
 }
 \examples{
-uflist()
+uflist(reg= NA) #show all states of the country.
+uflist(reg= 'Sul') #only exhibit States in the 'Sul' region of the country.
 
 }
 \references{

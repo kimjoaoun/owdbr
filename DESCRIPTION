@@ -1,10 +1,11 @@
 Package: owdbr
 Title: Open Welfare Data Brazil
-Version: 1.0.0.30
-Authors@R: person("Joao Pedro", "Oliveira dos Santos", email = "joaopsantos@pm.me", role = c("aut", "cre"))
-Description: Tools for collecting municipal-level data from several Brazilian governmental social programs.
+Version: 1.0.0.34
+Authors@R: person("Joao Pedro", "Oliveira dos Santos", email = "joaopsantos@pm.me", role = c("aut", "cre"), comment= c(ORCID= "0000-0003-1752-265X"))
+Description: Tools for collecting municipal-level data <http://www.transparencia.gov.br/swagger-ui.html> from several Brazilian governmental social programs.
 Depends: R (>= 3.4.4)
 License: MIT + file LICENSE
+URL: https://github.com/kimjoaoun/owdbr
 Encoding: UTF-8
 LazyData: true
 Imports:
@@ -17,3 +18,4 @@ Imports:
     rlang,
     magrittr
 RoxygenNote: 6.1.1
+    

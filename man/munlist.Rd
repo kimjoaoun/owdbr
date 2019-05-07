@@ -30,7 +30,6 @@ Download a tibble with all the IBGECODE from municipality of the desired State.
 }
 \examples{
 munlist(11)
-munlist(c(11, 50))
 
 }
 \author{
