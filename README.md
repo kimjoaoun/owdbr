@@ -73,4 +73,4 @@ Please note that the 'owdbr' project is released with a [Contributor Code of Con
 
 -----------
 
-Citation (in Brazilian ABNT formatting rules): ```OLIVEIRA SANTOS, J; Open Welfare Data Brasil: Tools for collecting municipal-level data from several Brazilian governmental social programs. Versão 1.0.0.30. Rio de Janeiro, 06 Mai. 2019. Disponível em: https://github.com/kimjoaoun/owdbr/. Acesso em: *???*.```
+Citation (in Brazilian ABNT formatting rules): ```OLIVEIRA SANTOS, J; Open Welfare Data Brazil: Tools for collecting municipal-level data from several Brazilian governmental social programs. Versão 1.0.0.30. Rio de Janeiro, 06 Mai. 2019. Disponível em: https://github.com/kimjoaoun/owdbr/. Acesso em: *???*.```
