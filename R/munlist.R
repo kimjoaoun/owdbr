@@ -6,17 +6,17 @@
 #'
 #'@return a tibble with the requested data divided in 11 columns, if there are more than one IBGECODE, returns all of them in the same tibble.
 #'\describe{
-#'   \item{table.dataReferencia}{Reference date}
-#'   \item{table.valor}{Amount of money invested in the municipality.}
-#'   \item{table.quantidadeBeneficiados}{Number of citizens wich are enrolled in the program in that moment}
-#'   \item{table.municipio.codigoIBGE}{IBGE code of the municipality.}
-#'   \item{table.municipio.nomeIBGE}{Name of the municipality.}
-#'   \item{table.municipio.pais}{Country of the municipality.}
-#'   \item{table.municipio.uf.sigla}{Abbreviation of name of the state in which the municipality is.}
-#'   \item{table.municipio.uf.nome}{Full name of the state in wich the municipality is.}
-#'   \item{table.tipo.id}{Type}
-#'   \item{table.tipo.descricao}{Abbreviation of the program's name.}
-#'   \item{table.tipo.descricaoDetalhada}{Full name of the program.}
+#'   \item{dataReferencia}{Reference date}
+#'   \item{valor}{Amount of money invested in the municipality.}
+#'   \item{quantidadeBeneficiados}{Number of citizens wich are enrolled in the program in that moment}
+#'   \item{municipio.codigoIBGE}{IBGE code of the municipality.}
+#'   \item{municipio.nomeIBGE}{Name of the municipality.}
+#'   \item{municipio.pais}{Country of the municipality.}
+#'   \item{municipio.uf.sigla}{Abbreviation of name of the state in which the municipality is.}
+#'   \item{municipio.uf.nome}{Full name of the state in wich the municipality is.}
+#'   \item{tipo.id}{Type}
+#'   \item{tipo.descricao}{Abbreviation of the program's name.}
+#'   \item{tipo.descricaoDetalhada}{Full name of the program.}
 #'   }
 #'
 #'@examples munlist(11)

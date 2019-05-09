@@ -9,7 +9,7 @@
 #'    \item{EST}{The full name of the state.}
 #'    \item{UF}{The abbreviation of the state's name.}
 #'    \item{num}{The identification number of the state.}
-#'    \item{regiao}{Region of the country in which the State is located.}
+#'    \item{region}{Region of the country in which the State is located.}
 #' }
 #'
 #'@examples uflist(reg= NA) #show all states of the country.
