@@ -16,6 +16,10 @@ Collects data from Public APIs that contains information related to the followin
 ```r
 install.packages('devtools')
 devtools::install_github('kimjoaoun/owdbr')
+
+## or directly from CRAN
+
+install.packages('owdbr')
 ```
 
 ## Introduction
