@@ -1,6 +1,8 @@
 # Open Welfare Data Brazil
 
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+[![](http://cranlogs.r-pkg.org/badges/grand-total/owdbr?color=blue)](https://cran.r-project.org/package=owdbr)
+[![](https://www.r-pkg.org/badges/version/owdbr?color=orange)](https://cran.r-project.org/package=owdbr)
 
 Tools for collecting municipal-level data from several Brazilian governmental social programs.
 
