@@ -16,6 +16,7 @@ Collects data from Public APIs that contains information related to the followin
 ## Installation
 
 ```r
+#You could install the latest version (under development and probably a little bit unstable, but with more functions) here on GitHub
 install.packages('devtools')
 devtools::install_github('kimjoaoun/owdbr')
 
