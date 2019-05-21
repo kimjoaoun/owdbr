@@ -29,19 +29,19 @@
 
 munlist <- function(UF_Num) {
 
-  ufnumenv<- UF_Num
+  ufnumenv = UF_Num
 
-  if(is.na(ufnumenv)== TRUE) {
+  if(is.na(ufnumenv) == TRUE) {
     stop('UF_Num must not be equal to NA. You must specify a UF, use owdbr::owdbr_uflist() to see the list of the availible States and its UFs.')
   }
 
-  resp <- data.table::fread("https://raw.githubusercontent.com/kimjoaoun/mateRial/master/IBGE_Mun/munibge.csv")
-  table <- c()
+  resp = data.table::fread("https://raw.githubusercontent.com/kimjoaoun/mateRial/master/IBGE_Mun/munibge.csv")
+  table = c()
 
   for (i in UF_Num) {
 
-    newRow <- dplyr::filter(resp, resp$UF == i)
-    table <- rbind(table, newRow)
+    newRow = dplyr::filter(resp, resp$UF == i)
+    table = rbind(table, newRow)
   }
 
   return(tibble::as_tibble(table))
