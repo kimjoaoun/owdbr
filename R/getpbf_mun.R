@@ -73,9 +73,9 @@ getpbf_mun <- function(IBGECODE, AAAA, MM = NULL, PAGE = 1, YEARLY = TRUE) {
         )
       )
 
-      #  if (request$status_code != 200) {
-      #  stop(warning("Request Failed: Status Code "), request$status_code) # In case of error, what to show?
-      # }
+        if (request$status_code != 200) {
+        stop(warning("Request Failed: Status Code "), request$status_code) # In case of error, what to show?
+       }
 
       # Transforma a resposta da API em texto, e então coloca-a em um DF, que depois é transformado em tibble.
       resp <- httr::content(request, as = "text", encoding = "UTF-8")
