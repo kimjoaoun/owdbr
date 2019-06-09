@@ -3,6 +3,7 @@
 export("%>%")
 export(getpbf_mun)
 export(getpeti_mun)
+export(getsd_mun)
 export(munlist)
 export(uflist)
 import(tibble)

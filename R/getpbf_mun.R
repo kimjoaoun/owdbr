@@ -24,7 +24,9 @@
 #'   \item{tipo.descricaoDetalhada}{Full name of the program.}
 #'   }
 #' @examples
+#' \dontrun{
 #' getpbf_mun("3304557", AAAA = "2015", MM = "05", PAGE = 1, YEARLY = FALSE)
+#' }
 #' @author Joao Pedro Oliveira dos Santos, International Relations Institute, Pontifical Catholic University of Rio de Janeiro
 #'
 #' @export
@@ -36,7 +38,7 @@ getpbf_mun <- function(IBGECODE, AAAA, MM = NULL, PAGE = 1, YEARLY = TRUE) {
     stop("Invalid Input: Program Bolsa Familia was created in 2003, so AAAA cannot be < 2003")
   }
   if (AAAA < 2012) {
-    stop("The requested time period data might not be availible!")
+    warning("The requested time period data might not be availible!")
   }
   if (is.null(MM) != TRUE) {
     if (MM > 12) {
@@ -92,7 +94,6 @@ getpbf_mun <- function(IBGECODE, AAAA, MM = NULL, PAGE = 1, YEARLY = TRUE) {
     for (i in MX) {
       data <- getpbf_mun(IBGECODEN, anos, i, PAGEN, FALSE) # Recursion to avoid !DRY
       table <- dplyr::bind_rows(table, data)
-      Sys.sleep(0.210)
     }
   }
   return(tibble::as_tibble(table))

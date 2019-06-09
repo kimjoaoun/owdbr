@@ -12,7 +12,7 @@ uflist(region = NA)
 \value{
 a tibble with 3 columns.
 \describe{
-   \item{EST}{The full name of the state.}
+   \item{State}{The full name of the state.}
    \item{UF}{The abbreviation of the state's name.}
    \item{num}{The identification number of the state.}
    \item{region}{Region of the country in which the State is located.}
@@ -22,9 +22,10 @@ a tibble with 3 columns.
 Returns a tibble which contains the IBGE identification code of each one of all 23 UFs (Units of the Federation) in Brazil.
 }
 \examples{
-uflist(reg= NA) #show all states of the country.
-uflist(region= 'Sul') #only exhibit States in the 'Sul' region of the country.
-
+\dontrun{
+uflist(reg = NA) # show all states of the country.
+uflist(region = "Sul") # only exhibit States in the 'Sul' region of the country.
+}
 }
 \references{
 Source: \href{https://cidades.ibge.gov.br}{IBGE (Brazilian Institute of Geography and Statistics)}

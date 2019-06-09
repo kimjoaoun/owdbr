@@ -29,8 +29,9 @@ a tibble with the requested data divided in 11 columns, if there are more than o
 Download a tibble with all the IBGECODE from municipality of the desired State.
 }
 \examples{
+\dontrun{
 munlist(11)
-
+}
 }
 \author{
 Joao Pedro Oliveira dos Santos, International Relations Institute, Pontifical Catholic University of Rio de Janeiro

@@ -1,29 +1,30 @@
-#'All the State's UF Codes.
+#' All the State's UF Codes.
 #'
-#'Returns a tibble which contains the IBGE identification code of each one of all 23 UFs (Units of the Federation) in Brazil.
+#' Returns a tibble which contains the IBGE identification code of each one of all 23 UFs (Units of the Federation) in Brazil.
 #'
-#'@param region filter the UFs (Units of the Federation or States) by geographical region. If NA, all state are shown. According to the Brazilian Institute of Geography and Statistics, the country is divided in 5 regions: "Norte", "Nordeste", "Centro-Oeste", "Sul" and "Sudeste".
+#' @param region filter the UFs (Units of the Federation or States) by geographical region. If NA, all state are shown. According to the Brazilian Institute of Geography and Statistics, the country is divided in 5 regions: "Norte", "Nordeste", "Centro-Oeste", "Sul" and "Sudeste".
 #'
-#'@return a tibble with 3 columns.
+#' @return a tibble with 3 columns.
 #' \describe{
-#'    \item{EST}{The full name of the state.}
+#'    \item{State}{The full name of the state.}
 #'    \item{UF}{The abbreviation of the state's name.}
 #'    \item{num}{The identification number of the state.}
 #'    \item{region}{Region of the country in which the State is located.}
 #' }
 #'
-#'@examples uflist(reg= NA) #show all states of the country.
-#'@examples uflist(region= 'Sul') #only exhibit States in the 'Sul' region of the country.
+#' @examples
+#' \dontrun{
+#' uflist(reg = NA) # show all states of the country.
+#' uflist(region = "Sul") # only exhibit States in the 'Sul' region of the country.
+#' }
+#' @author Joao Pedro Oliveira dos Santos, International Relations Institute, Pontifical Catholic University of Rio de Janeiro
 #'
-#'@author Joao Pedro Oliveira dos Santos, International Relations Institute, Pontifical Catholic University of Rio de Janeiro
+#' @export
 #'
-#'@export
-#'
-#'@references Source: \href{https://cidades.ibge.gov.br}{IBGE (Brazilian Institute of Geography and Statistics)}
+#' @references Source: \href{https://cidades.ibge.gov.br}{IBGE (Brazilian Institute of Geography and Statistics)}
 
-uflist <- function(region=NA) {
-
-    EST <-
+uflist <- function(region = NA) {
+  State <-
     c(
       "Acre",
       "Alagoas",
@@ -112,39 +113,41 @@ uflist <- function(region=NA) {
     17,
     53
   )
-  regiao <- c("Norte",
-             "Nordeste",
-             "Nordeste",
-             "Norte",
-             "Nordeste",
-             "Nordeste",
-             "Sudeste",
-             "Centro-Oeste",
-             "Nordeste",
-             "Centro-Oeste",
-             "Centro-Oeste",
-             "Sudeste",
-             "Norte",
-             "Nordeste",
-             "Sul",
-             "Nordeste",
-             "Nordeste",
-             "Sudeste",
-             "Nordeste",
-             "Sul",
-             "Norte",
-             "Norte",
-             "Sul",
-             "Sudeste",
-             "Nordeste",
-             "Norte",
-             "Centro-Oeste")
+  regiao <- c(
+    "Norte",
+    "Nordeste",
+    "Nordeste",
+    "Norte",
+    "Nordeste",
+    "Nordeste",
+    "Sudeste",
+    "Centro-Oeste",
+    "Nordeste",
+    "Centro-Oeste",
+    "Centro-Oeste",
+    "Sudeste",
+    "Norte",
+    "Nordeste",
+    "Sul",
+    "Nordeste",
+    "Nordeste",
+    "Sudeste",
+    "Nordeste",
+    "Sul",
+    "Norte",
+    "Norte",
+    "Sul",
+    "Sudeste",
+    "Nordeste",
+    "Norte",
+    "Centro-Oeste"
+  )
 
   regf <- region
-  df <- tibble::as_tibble(data.frame(num, UF, EST, regiao))
+  df <- tibble::as_tibble(data.frame(State, UF, num, regiao))
 
-  if(is.na(region) != TRUE){
-      dplyr::filter(df, df$regiao==regf) -> df
+  if (is.na(region) != TRUE) {
+    dplyr::filter(df, df$regiao == regf) -> df
   }
   return(df)
 }
