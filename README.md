@@ -73,7 +73,12 @@ Then, after a few seconds, the tibble with the list of municipalities in the sta
 data.pbf <- getpbf_mun(munis$codigo_municipio_completo, 
                        AAAA = 2015, 
                        MM = 10, 
-                       PAGE = 1)
+                       PAGE = 1)      
+```
+If one desire data for an entire year, one can run:
+
+```r
+data.pbf <- getpbf_mun(munis$codigo_municipio_completo, AAAA= 2015, YEARLY=TRUE)
 ```
 
 -----------
