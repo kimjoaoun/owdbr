@@ -10,8 +10,8 @@ Collects data from Public APIs that contains information related to the followin
 * Bolsa Familia Program  **OK [CRAN]**
 * PETI (Child Labour Erradication Program)  **OK [CRAN]**
 * Seguro Defeso  **OK [CRAN]** 
-* FIES (Financiamento Estudantil)  *Soon*
-* PROUNI  *Soon*
+* FIES (Governmental Student Loans)  *Soon*
+* PROUNI (University for Everyone Program) *Soon*
 
 ## Installation
 
