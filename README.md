@@ -111,7 +111,7 @@ A BibTeX entry for LaTeX users is:
 In Brazilian ABNT formatting rules: 
 
 ```
-OLIVEIRA SANTOS, J; Open Welfare Data Brazil: Tools for collecting municipal-level data from several Brazilian governmental social programs. Versão 1.0.0.30. Rio de Janeiro, 06 Mai. 2019. Disponível em: https://github.com/kimjoaoun/owdbr/. Acesso em: *???*.
+OLIVEIRA SANTOS, J; Open Welfare Data Brazil: Tools for collecting municipal-level data from several Brazilian governmental social programs. Versão 1.0.1.0. Rio de Janeiro, 20 Jun. 2019. Disponível em: https://github.com/kimjoaoun/owdbr/. Acesso em: *???*.
 ```
 
 -----------
