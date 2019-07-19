@@ -30,7 +30,7 @@ The package has some simple functions that needs to be understood by the user. O
 
 #### * **``uflist()`` function** 
 
-The first step in using the package is running the ``uflist()`` function, this function takes **no arguments** and it returns a tibble with three columns: the first one is the ``num``(with the numeric identifier of the State); the second one being the ``State`` column, with the full name of the State; The ``UF`` column, which contains the UF code, that is a short name (abbreviation?) for a State; and finally, the ``region`` column, which contains the region of the State.
+The first step in using the package is running the ``uflist()`` function, this function takes **no arguments** and it returns a tibble with four columns: the first one is the ``num``(with the numeric identifier of the State); the second one being the ``State`` column, with the full name of the State; The ``UF`` column, which contains the UF code, that is a short name (abbreviation?) for a State; and finally, the ``region`` column, which contains the region of the State.
 
 The function accepts the "region" arguments with the following inputs "Norte", "Sul", "Nordeste", "Centro-Oeste" and "Sudeste", the region argument filter the States by the desired region, for example:
 
