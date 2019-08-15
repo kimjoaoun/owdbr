@@ -116,7 +116,7 @@ uflist <- function(region = NA) {
   regiao <- c(
     "Norte",
     "Nordeste",
-    "Nordeste",
+    "Norte",
     "Norte",
     "Nordeste",
     "Nordeste",
